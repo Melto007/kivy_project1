@@ -1,0 +1,18 @@
+Interface:
+    Label:
+        id: usernameLabel
+        text: "Username"
+        pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+        size_hint: 0.5, 0.1
+    TextInput:
+        id: usernameInput
+        hint_text: "Enter the name"
+        pos_hint: {'center_x': 0.5, 'center_y': 0.6}
+        size_hint: 0.5, 0.1
+        multiline: False
+        on_text_validate: root.handleSubmit()
+    Button:
+        text: 'Click Me!'
+        size_hint: 0.5, 0.1
+        pos_hint: {"center_x": 0.5, 'center_y': 0.5}
+        on_press: root.handleSubmit()
